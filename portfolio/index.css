@@ -1,0 +1,214 @@
+/* =========================
+   RESET / BASE
+========================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+:root {
+    /* Hoogte header (match met jouw header) */
+    --header-h: 120px;
+
+    /* Ruimte links/rechts: voelt op desktop als je oude 180px,
+       maar schaalt netjes mee naar mobiel */
+    --side-pad: clamp(16px, 8vw, 180px);
+
+    /* Gap tussen PORTFOLIO en avatar */
+    --hero-gap: clamp(16px, 3vw, 60px);
+
+    /* Onderpadding zodat avatar niet “plakt” aan de bodem */
+    --hero-bottom-pad: clamp(18px, 5vh, 60px);
+
+    /* PORTFOLIO positie fine-tuning */
+    --portfolio-top: clamp(19vh, 14vh, 20vh);
+    /* hoger/lager zetten */
+    --portfolio-left: 40px;                  /* extra naar rechts indien nodig */
+}
+
+/* geen scroll op index */
+body {
+    margin: 0;
+    padding: 0 var(--side-pad);
+
+    overflow: hidden; /* geen verticale/horizontale scroll */
+    font-family: Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    height: var(--header-h);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+/* jouw nav items */
+.projecten,
+.about,
+.instagram,
+.contact {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    white-space: nowrap;
+}
+
+/* naam + occupatie */
+.naam-occupatie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.naam {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    line-height: 1.05;
+}
+
+.occupatie {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    text-align: center;
+}
+
+/* link styling */
+a,
+.instagram-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* =========================
+   HERO LAYOUT (PORTFOLIO links / avatar rechts onder)
+========================= */
+.hero {
+    height: calc(100svh - var(--header-h)); /* svh = stabiel op mobiele browsers */
+    display: grid;
+    grid-template-columns: 1fr auto; /* links text, rechts avatar */
+    align-items: stretch;
+    column-gap: var(--hero-gap);
+    padding-bottom: var(--hero-bottom-pad);
+}
+
+/* PORTFOLIO komt in het “vak” links */
+.portfolio-container {
+    justify-self: start;
+    align-self: start;
+    margin-top: var(--portfolio-top);
+    margin-left: var(--portfolio-left);
+
+    /* Belangrijk:
+       - fit-content zorgt dat de rechterrand exact op het einde van PORTFOLIO valt
+       - text-align:right lijnt de subtekst rechts uit op diezelfde rand */
+    width: fit-content;
+    text-align: right;
+}
+
+.portfolio-tekst {
+    font-family: "mati", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Increased sizes: raise min and max to make PORTFOLIO larger */
+    font-size: clamp(60px, 9vw, 140px);
+    line-height: 0.95;
+    margin: 0;
+}
+
+.portfolio-sub {
+    margin-top: clamp(6px, 1vh, 12px);
+    font-size: clamp(12px, 1.2vw, 16px);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+/* Avatar: rechts onder */
+.avatar-outer-container {
+    justify-self: end;
+    align-self: end;
+
+    width: clamp(220px, 26vw, 420px);
+    height: clamp(320px, 55vh, 600px);
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.avatar-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* =========================
+   RESPONSIVE (kleine schermen)
+   - header wrapt
+   - hero stackt (anders wordt het te krap)
+========================= */
+@media (max-width: 900px) {
+    body {
+        padding: 0 16px;
+    }
+
+    .header {
+        height: auto;
+        padding: 16px 0 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 22px;
+    }
+
+    .hero {
+        /* we houden nog steeds “no scroll”, dus we stacken */
+        height: calc(100svh - 140px);
+        grid-template-columns: 1fr;
+        row-gap: 18px;
+        padding-bottom: 18px;
+    }
+
+    .portfolio-container {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .avatar-outer-container {
+        justify-self: center;
+        width: min(80vw, 360px);
+        height: min(55vh, 520px);
+    }
+}
