@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="responsive zoals ik het wil via chat">
+    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="hamburger menu is nu fullscreen ipv dropdown. Via chatgpt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <workItem from="1767947807633" duration="4384000" />
       <workItem from="1768051810200" duration="338000" />
       <workItem from="1768055929308" duration="5057000" />
-      <workItem from="1768214687006" duration="21830000" />
+      <workItem from="1768214687006" duration="22627000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -185,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768497580256</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="hamburger menu is nu fullscreen ipv dropdown. Via chatgpt">
+      <option name="closed" value="true" />
+      <created>1768499117345</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1768499117345</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +218,8 @@
     <MESSAGE value="projecten pagina begin" />
     <MESSAGE value="header en hero gemaakt + begin van responisve design door chatgpt" />
     <MESSAGE value="responsive zoals ik het wil via chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsive zoals ik het wil via chat" />
+    <MESSAGE value="hamburger menu is nu fullscreen ipv dropdown. Via chatgpt" />
+    <option name="LAST_COMMIT_MESSAGE" value="hamburger menu is nu fullscreen ipv dropdown. Via chatgpt" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

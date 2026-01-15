@@ -77,7 +77,7 @@ body {
 }
 
 .naam {
-    font-size: 32px;
+    font-size: clamp(22px, 5.5vw, 32px);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -231,7 +231,7 @@ a,
 
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.28s ease;
 
     z-index: 2000;
 }
@@ -240,24 +240,37 @@ a,
 .mobile-menu-inner {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    align-items: center;
+    gap: clamp(16px, 3vh, 28px);
 
     text-align: center;
+    padding: 24px;
 }
 
 
 .mobile-item {
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 2px;
+    /* Fashion/editorial: groot, strak, veel “lucht” */
+    font-size: clamp(34px, 6vw, 64px);
+    line-height: 0.95;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 
+    /* kies 1 van deze 2 smaken:
+       A) strak modern: Helvetica
+       B) editorial serif (als je die hebt via Adobe Fonts) */
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+
+    color: #000;
+    text-decoration: none;
+
     cursor: pointer;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .mobile-item:hover {
-    opacity: 0.6;
+    opacity: 0.55;
+    transform: translateY(-2px);
 }
 
 /* open state */
@@ -274,6 +287,21 @@ a,
    - hero stackt (zoals jij had)
 ========================= */
 @media (max-width: 900px) {
+
+    .occupatie {
+        font-size: 12px;
+        letter-spacing: 0.8px;
+    }
+
+    .burger-line {
+        width: 26px;
+        height: 2.5px;
+    }
+
+    .header {
+        padding: 20px 0 8px;
+    }
+
     body {
         padding: 0 16px;
     }
