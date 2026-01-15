@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="projecten.css">
   <script src="menu.js" defer></script>
+  <script src="projecten-detail.js" defer></script>
   <link rel="stylesheet" href="https://use.typekit.net/fcq1hhb.css">
 </head>
 
@@ -25,7 +26,6 @@
       <div class="occupatie">TOEKOMSTIG FRONT-END DEVELOPER</div>
     </div>
   </a>
-
 
   <div class="nav-links nav-right">
     <a href="https://www.instagram.com/koetje0/" target="_blank" class="instagram-link">
@@ -53,59 +53,223 @@
 
 <!-- PROJECTEN PAGINA LAYOUT -->
 <main class="projecten-page">
+
   <aside class="body-left">
     <nav class="project-container" aria-label="Project categorieën">
-      <div class="project-titel">projecten</div>
+
+      <!-- Klik hierop = terug naar OVERZICHT -->
+      <div class="project-titel">
+        <a class="cat-link" href="#overzicht" id="js-overview-link">projecten</a>
+      </div>
+
       <ol class="project-list">
-        <li><a class="cat-link" href="#scripting">scripting</a></li>
-        <li><a class="cat-link" href="#ui">UI design</a></li>
-        <li><a class="cat-link" href="#animatie">animatie</a></li>
-        <li><a class="cat-link" href="#schetsboek">schetsboek</a></li>
+        <!-- Deze openen DETAIL view i.p.v. scrollen -->
+        <li><a class="cat-link js-open-detail" href="#scripting" data-project="scripting">scripting</a></li>
+        <li><a class="cat-link js-open-detail" href="#ui" data-project="ui">UI design</a></li>
+        <li><a class="cat-link js-open-detail" href="#fotografie" data-project="fotografie">fotografie</a></li>
+        <li><a class="cat-link js-open-detail" href="#animatie" data-project="animatie">animatie</a></li>
+        <li><a class="cat-link js-open-detail" href="#schetsboek" data-project="schetsboek">schetsboek</a></li>
       </ol>
     </nav>
   </aside>
 
+
   <section class="body-right">
-    <article class="project" id="scripting">
-      <div class="project-thumbnail">
-        <img class="project-img" src="afbeeldingen/il-vicolo-screen.png" alt="Il Vicolo project preview">
-      </div>
-      <div class="project-omschrijving-container">
-        <div class="project-titel">scripting</div>
-        <div class="project-omschrijving">
-          Binnen het vak Scripting ontwikkelde ik een interactieve take-away website met HTML, CSS en JavaScript, zonder frameworks. De website toont menu-items dynamisch en bevat filtering, sortering en een winkelmand beheerd via DOM-manipulatie en localStorage. Dit project benadrukt mijn groei in gestructureerd JavaScript en logisch denken binnen een front-end context.
-        </div>
-      </div>
-    </article>
 
-    <article class="project" id="ui">
-      <div class="project-thumbnail"></div>
-      <div class="project-omschrijving-container">
-        <div class="project-titel">UI design</div>
-        <div class="project-omschrijving">
-          hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
-        </div>
-      </div>
-    </article>
+    <!-- =========================
+         OVERZICHT (blijft zoals het is)
+    ========================= -->
+    <div id="view-overview">
 
-    <article class="project" id="animatie">
-      <div class="project-thumbnail"></div>
-      <div class="project-omschrijving-container">
-        <div class="project-titel">animatie</div>
-        <div class="project-omschrijving">
-          hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
+      <article class="project js-project-card" data-project="scripting">
+        <div class="project-thumbnail">
+          <img class="project-img" src="afbeeldingen/il-vicolo-screen.png" alt="Il Vicolo project preview">
         </div>
-      </div>
-    </article>
+        <div class="project-omschrijving-container">
+          <div class="project-titel">Scripting</div>
+          <div class="project-omschrijving">
+            Binnen het vak Scripting ontwikkelde ik een interactieve take-away website met HTML, CSS en JavaScript, zonder frameworks. De website toont menu-items dynamisch en bevat filtering, sortering en een winkelmand beheerd via DOM-manipulatie en localStorage. Dit project benadrukt mijn groei in gestructureerd JavaScript en logisch denken binnen een front-end context.
+          </div>
+        </div>
+      </article>
 
-    <article class="project" id="schetsboek">
-      <div class="project-thumbnail"></div>
-      <div class="project-omschrijving-container">
-        <div class="project-titel">schetsboek</div>
-        <div class="project-omschrijving">
-          hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
+      <article class="project js-project-card" data-project="ui">
+        <div class="project-thumbnail">
+          <img src="afbeeldingen/UI-design_project_thumbnail.png" alt="UI design project preview" class="project-img">
         </div>
-      </div>
-    </article>
+        <div class="project-omschrijving-container">
+          <div class="project-titel">UI design</div>
+          <div class="project-omschrijving">
+            Binnen het vak UI Design ontwierp ik de user interface van een digitale toepassing, van wireframes tot een uitgewerkt visueel design. Ik werkte een volledige taskflow en een eigen homepagina uit in Figma, met aandacht voor branding, usability en consistentie.
+          </div>
+        </div>
+      </article>
+
+      <article class="project js-project-card" data-project="fotografie">
+        <div class="project-thumbnail"></div>
+        <div class="project-omschrijving-container">
+          <div class="project-titel">Fotografie</div>
+          <div class="project-omschrijving">
+            hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
+          </div>
+        </div>
+      </article>
+
+      <article class="project js-project-card" data-project="animatie">
+        <div class="project-thumbnail"></div>
+        <div class="project-omschrijving-container">
+          <div class="project-titel">Animatie</div>
+          <div class="project-omschrijving">
+            hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
+          </div>
+        </div>
+      </article>
+
+      <article class="project js-project-card" data-project="schetsboek">
+        <div class="project-thumbnail"></div>
+        <div class="project-omschrijving-container">
+          <div class="project-titel">schetsboek</div>
+          <div class="project-omschrijving">
+            hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+
+    <!-- =========================
+         DETAIL “PAGINA’S” (nieuw, in body-right)
+         Hier kan je later extra secties/beelden toevoegen
+    ========================= -->
+
+    <div id="view-detail-scripting" class="is-hidden">
+      <article class="project project-detail">
+
+        <div class="project-thumbnail">
+          <img
+              class="project-img"
+              src="afbeeldingen/il-vicolo-screen.png"
+              alt="Il Vicolo project preview"
+              loading="lazy"
+          >
+        </div>
+        <header class="project-header">
+          <div class="project-titel">Scripting</div>
+        </header>
+        <div class="project-omschrijving-container">
+          <div class="project-omschrijving">
+            <p>
+              Il Vicolo is een fictieve take-away/restaurantwebsite die ik ontwikkelde binnen het vak Scripting.
+              Het project focust op het dynamisch weergeven van menu-items, filtering en sortering, en het beheren
+              van een winkelmand via pure JavaScript, zonder frameworks. State zoals het winkelmandje, het gerecht
+              van de dag, adminstatus en promotiecodes wordt bijgehouden via localStorage, waardoor interacties
+              persistent blijven over pagina’s heen.
+            </p>
+
+            <p>
+              Naast de basisvereisten implementeerde ik uitbreidingen zoals een admin login om het gerecht van de
+              dag aan te passen, promotiecodes met korting, en een aparte winkelmandpagina met overzicht en
+              prijsberekening. Niet alle uitbreidingen werden afgewerkt door tijdsgebrek, maar de gemaakte keuzes
+              en beperkingen tonen mijn leerproces en inzicht in DOM-manipulatie, event handling en state management
+              binnen een realistische front-end context.
+            </p>
+          </div>
+
+          <div class="project-links">
+            <a
+                class="project-linkout"
+                href="https://scripting-takeaway-project.netlify.app"
+                target="_blank"
+                rel="noopener"
+            >
+              OPEN LIVE SITE →
+            </a>
+
+            <div class="project-platform-note">
+              Enkel gemaakt voor desktop.
+            </div>
+          </div>
+
+        </div>
+      </article>
+    </div>
+
+
+    <div id="view-detail-ui" class="is-hidden">
+      <article class="project project-detail">
+
+        <!-- TITEL + UITLEG BOVEN -->
+        <header class="project-header">
+          <div class="project-titel">UI design</div>
+        </header>
+
+        <div class="project-omschrijving-container">
+          <div class="project-omschrijving">
+            <p>
+              Binnen het vak UI Design werkte ik in groep aan het ontwerp van een digitale toepassing, van concept en sitemap tot wireframes en een uitgewerkt visueel design. Ik was individueel verantwoordelijk voor één taskflow en een eigen uitwerking van de homepagina, uitgewerkt in Figma voor desktop en mobile. Het project focuste op usability, consistentie en branding, en resulteerde in een professioneel UI-design onderbouwd met duidelijke flows en componenten.
+            </p>
+          </div>
+
+          <div class="project-links">
+            <div class="project-platform-note">
+              Project in progress
+            </div>
+          </div>
+        </div>
+
+        <!-- PDF ONDERAAN -->
+        <div class="ui-pdf-wrapper">
+          <iframe
+              src="afbeeldingen/UI-design-case.pdf"
+              title="UI design case document"
+              loading="lazy"
+          ></iframe>
+        </div>
+
+      </article>
+    </div>
+
+
+    <div id="view-detail-fotografie" class="is-hidden">
+      <article class="project">
+        <div class="project-thumbnail"></div>
+        <div class="project-omschrijving-container">
+          <div class="project-titel">Fotografie</div>
+          <div class="project-omschrijving">
+            Dit is de detailpagina voor Animatie. Voeg hier later je projectcontext, stijlframes, storyboard, en final renders toe.
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div id="view-detail-animatie" class="is-hidden">
+      <article class="project">
+        <div class="project-thumbnail"></div>
+        <div class="project-omschrijving-container">
+          <div class="project-titel">animatie</div>
+          <div class="project-omschrijving">
+            Dit is de detailpagina voor Animatie. Voeg hier later je projectcontext, stijlframes, storyboard, en final renders toe.
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div id="view-detail-schetsboek" class="is-hidden">
+      <article class="project">
+        <div class="project-thumbnail"></div>
+        <div class="project-omschrijving-container">
+          <div class="project-titel">schetsboek</div>
+          <div class="project-omschrijving">
+            Dit is de detailpagina voor Schetsboek. Voeg hier later foto’s/scans toe en kort je aanpak/reflectie.
+          </div>
+        </div>
+      </article>
+    </div>
+
   </section>
-  </mai
+
+</main>
+
+</body>
+</html>
