@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="hamburger menu en beginpagina helemaal af (via ChatGPT)">
+    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="animatie op woord portfolio; chatgpt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/projecten.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/projecten.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/projecten.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,7 @@
       <workItem from="1767947807633" duration="4384000" />
       <workItem from="1768051810200" duration="338000" />
       <workItem from="1768055929308" duration="5057000" />
-      <workItem from="1768214687006" duration="25889000" />
+      <workItem from="1768214687006" duration="31534000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -202,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768499865037</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="animatie op woord portfolio; chatgpt">
+      <option name="closed" value="true" />
+      <created>1768507954983</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1768507954983</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +239,8 @@
     <MESSAGE value="responsive zoals ik het wil via chat" />
     <MESSAGE value="hamburger menu is nu fullscreen ipv dropdown. Via chatgpt" />
     <MESSAGE value="hamburger menu en beginpagina helemaal af (via ChatGPT)" />
-    <option name="LAST_COMMIT_MESSAGE" value="hamburger menu en beginpagina helemaal af (via ChatGPT)" />
+    <MESSAGE value="animatie op woord portfolio; chatgpt" />
+    <option name="LAST_COMMIT_MESSAGE" value="animatie op woord portfolio; chatgpt" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

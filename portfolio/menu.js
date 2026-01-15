@@ -29,6 +29,7 @@ document.addEventListener("keydown", (e) => {
 
 /* Optioneel: klik op een item = sluiten */
 mobileMenu.addEventListener("click", (e) => {
-    const item = e.target.closest(".mobile-item");
-    if (item) closeMenu();
+    const link = e.target.closest("a.mobile-item");
+    if (link) closeMenu();
 });
+

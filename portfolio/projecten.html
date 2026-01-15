@@ -1,99 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projecten</title>
+
   <link rel="stylesheet" href="projecten.css">
+  <script src="menu.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/fcq1hhb.css">
 </head>
+
 <body>
-  <div class="body-left">
-    <div class="terug-container">
-      <a href="index.html" class="terug-link">
-        <div class="terug-img-container">
-          <img class="terug-img" src="afbeeldingen/ikknop.png" alt="terug img zoe haenen portrait">
-        </div>
-      </a>
-    </div>
 
-    <div class="project-container">
-      <div class="project-titel">
-        projecten
-      </div>
+<!-- HEADER (zelfde als index.html) -->
+<div class="header" id="siteHeader">
+  <div class="nav-links nav-left">
+    <a class="nav-link" href="projecten.html"><div class="projecten">PROJECTEN</div></a>
+    <div class="about">OVER MIJ</div>
+  </div>
+
+  <a href="index.html" class="brand-link">
+    <div class="naam-occupatie">
+      <div class="naam">ZOË HAENEN</div>
+      <div class="occupatie">TOEKOMSTIG FRONT-END DEVELOPER</div>
+    </div>
+  </a>
+
+
+  <div class="nav-links nav-right">
+    <a href="https://www.instagram.com/koetje0/" target="_blank" class="instagram-link">
+      <div class="instagram">INSTAGRAM</div>
+    </a>
+    <div class="contact">CONTACT</div>
+  </div>
+
+  <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="projecten.html" class="mobile-item">PROJECTEN</a>
+      <div class="mobile-item">OVER MIJ</div>
+      <a href="https://www.instagram.com/koetje0/" target="_blank" class="mobile-item">INSTAGRAM</a>
+      <div class="mobile-item">CONTACT</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- PROJECTEN PAGINA LAYOUT -->
+<main class="projecten-page">
+  <aside class="body-left">
+    <nav class="project-container" aria-label="Project categorieën">
+      <div class="project-titel">projecten</div>
       <ol class="project-list">
-        <li>
-          scripting
-        </li>
-        <li>
-          UI design
-        </li>
-        <li>
-          animatie
-        </li>
-        <li>
-          schetsboek
-        </li>
+        <li><a class="cat-link" href="#scripting">scripting</a></li>
+        <li><a class="cat-link" href="#ui">UI design</a></li>
+        <li><a class="cat-link" href="#animatie">animatie</a></li>
+        <li><a class="cat-link" href="#schetsboek">schetsboek</a></li>
       </ol>
-    </div>
-  </div>
+    </nav>
+  </aside>
 
-  <div class="body-right">
-
-    <div class="project">
+  <section class="body-right">
+    <article class="project" id="scripting">
       <div class="project-thumbnail">
-        <img class="project-img" src="afbeeldingen/il-vicolo-screen.png" alt="">
+        <img class="project-img" src="afbeeldingen/il-vicolo-screen.png" alt="Il Vicolo project preview">
       </div>
       <div class="project-omschrijving-container">
-        <div class="project-titel">
-          scripting
+        <div class="project-titel">scripting</div>
+        <div class="project-omschrijving">
+          Binnen het vak Scripting ontwikkelde ik een interactieve take-away website met HTML, CSS en JavaScript, zonder frameworks. De website toont menu-items dynamisch en bevat filtering, sortering en een winkelmand beheerd via DOM-manipulatie en localStorage. Dit project benadrukt mijn groei in gestructureerd JavaScript en logisch denken binnen een front-end context.
         </div>
+      </div>
+    </article>
+
+    <article class="project" id="ui">
+      <div class="project-thumbnail"></div>
+      <div class="project-omschrijving-container">
+        <div class="project-titel">UI design</div>
         <div class="project-omschrijving">
           hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="project">
-      <div class="project-thumbnail">
-
-      </div>
+    <article class="project" id="animatie">
+      <div class="project-thumbnail"></div>
       <div class="project-omschrijving-container">
-        <div class="project-titel">
-          UI design
-        </div>
+        <div class="project-titel">animatie</div>
         <div class="project-omschrijving">
           hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="project">
-      <div class="project-thumbnail">
-
-      </div>
+    <article class="project" id="schetsboek">
+      <div class="project-thumbnail"></div>
       <div class="project-omschrijving-container">
-        <div class="project-titel">
-          animatie
-        </div>
+        <div class="project-titel">schetsboek</div>
         <div class="project-omschrijving">
           hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
         </div>
       </div>
-    </div>
-
-    <div class="project">
-      <div class="project-thumbnail">
-
-      </div>
-      <div class="project-omschrijving-container">
-        <div class="project-titel">
-          schetsboek
-        </div>
-        <div class="project-omschrijving">
-          hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
-        </div>
-      </div>
-    </div>
-
-  </div>
-</body>
-</html>
+    </article>
+  </section>
+  </mai
