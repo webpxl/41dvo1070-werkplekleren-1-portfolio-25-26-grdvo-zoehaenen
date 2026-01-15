@@ -401,3 +401,33 @@ a,
         flex: 0 0 auto;
     }
 }
+
+@media (hover: none) {
+    .portfolio-letters span {
+        transition: none;
+        transform: none;
+    }
+}
+
+.portfolio-letters span {
+    display: inline-block;              /* nodig voor transform */
+    transform: translateY(0);
+    transition: transform 180ms cubic-bezier(0.2, 0.7, 0.25, 1);
+    /* “type-machine” feel: niet smooth */
+    will-change: transform;
+}
+
+.portfolio-letters span:hover {
+    transform: translateY(-22px);
+}
+
+.portfolio-letters span {
+    display: inline-block;
+    transform: translateY(0);
+    transition: transform 120ms cubic-bezier(0.3, 0.9, 0.4, 1);
+}
+
+.portfolio-letters span:hover {
+    transform: translateY(-24px);
+    transition-duration: 80ms;
+}
