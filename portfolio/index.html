@@ -6,42 +6,55 @@
 <title>Title</title>
 
   <link rel="stylesheet" href="index.css">
+  <script src="menu.js" defer></script>
 
 
 </head>
 <body>
 
-<div class="header">
-  <div class="projecten">
-    PROJECTEN
+<div class="header" id="siteHeader">
+  <!-- Links (desktop) -->
+  <div class="nav-links nav-left">
+    <div class="projecten">PROJECTEN</div>
+    <div class="about">OVER MIJ</div>
   </div>
 
-  <div class="about">
-    OVER MIJ
-  </div>
-
+  <!-- Midden: blijft altijd zichtbaar -->
   <div class="naam-occupatie">
-    <div class="naam">
-      ZOË HAENEN
-    </div>
-
-    <div class="occupatie">
-      TOEKOMSTIG FRONT-END DEVELOPER
-    </div>
+    <div class="naam">ZOË HAENEN</div>
+    <div class="occupatie">TOEKOMSTIG FRONT-END DEVELOPER</div>
   </div>
 
-  <a href="https://www.instagram.com/koetje0/" target="_blank" class="instagram-link">
-    <div class="instagram">
-      INSTAGRAM
-    </div>
-  </a>
-
-  <div class="contact">
-    CONTACT
+  <!-- Rechts (desktop) -->
+  <div class="nav-links nav-right">
+    <a href="https://www.instagram.com/koetje0/" target="_blank" class="instagram-link">
+      <div class="instagram">INSTAGRAM</div>
+    </a>
+    <div class="contact">CONTACT</div>
   </div>
 
+  <!-- Hamburger (mobile) -->
+  <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
 
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-item">PROJECTEN</div>
+      <div class="mobile-item">OVER MIJ</div>
+
+      <a href="https://www.instagram.com/koetje0/" target="_blank" class="instagram-link mobile-item">
+        INSTAGRAM
+      </a>
+
+      <div class="mobile-item">CONTACT</div>
+    </div>
+  </div>
 </div>
+
 
 <div class="hero">
   <div class="portfolio-container">
@@ -59,7 +72,7 @@
       <img class="avatar" src="afbeeldingen/ikknop.png" alt="zoe haenen portrait">
     </div>
   </div>
-
+</div>
 
 
 </body>

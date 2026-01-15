@@ -28,8 +28,7 @@ body {
 
     /* PORTFOLIO positie fine-tuning */
     --portfolio-top: clamp(19vh, 14vh, 20vh);
-    /* hoger/lager zetten */
-    --portfolio-left: 40px;                  /* extra naar rechts indien nodig */
+    --portfolio-left: 40px; /* extra naar rechts indien nodig */
 }
 
 /* geen scroll op index */
@@ -51,6 +50,9 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+
+    /* nodig voor hamburger dropdown positioning */
+    position: relative;
 }
 
 /* jouw nav items */
@@ -130,7 +132,6 @@ a,
     font-weight: 400;
     font-style: normal;
 
-    /* Increased sizes: raise min and max to make PORTFOLIO larger */
     font-size: clamp(60px, 9vw, 140px);
     line-height: 0.95;
     margin: 0;
@@ -173,9 +174,80 @@ a,
 }
 
 /* =========================
+   HAMBURGER (default: uit op desktop)
+========================= */
+.burger {
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.burger-line {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #000;
+    border-radius: 999px;
+}
+
+/* dropdown menu (mobile) */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+
+    min-width: 220px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.mobile-menu-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 6px;
+}
+
+.mobile-item {
+    padding: 10px 12px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #000;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.mobile-item:hover {
+    background: rgba(0,0,0,0.06);
+}
+
+/* open state */
+.header.menu-open .mobile-menu {
+    display: block;
+}
+
+/* =========================
    RESPONSIVE (kleine schermen)
-   - header wrapt
-   - hero stackt (anders wordt het te krap)
+   - nav items -> hamburger
+   - naam+occupatie blijven
+   - hero stackt (zoals jij had)
 ========================= */
 @media (max-width: 900px) {
     body {
@@ -184,24 +256,64 @@ a,
 
     .header {
         height: auto;
-        padding: 16px 0 10px;
-        flex-wrap: wrap;
+        padding: 28px 0 10px;
         justify-content: center;
-        gap: 12px 22px;
+        gap: 12px;
     }
 
-    .hero {
-        /* we houden nog steeds “no scroll”, dus we stacken */
-        height: calc(100svh - 140px);
-        grid-template-columns: 1fr;
-        row-gap: 18px;
-        padding-bottom: 18px;
+    .projecten,
+    .about,
+    .contact {
+        display: none;
     }
+
+    .nav-right .instagram-link {
+        display: none;
+    }
+
+    .burger {
+        display: inline-flex;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* hero stackt, exact zoals jij het had */
+    .hero {
+        height: calc(100svh - 140px);
+        display: grid;
+        grid-template-columns: 1fr;
+
+        /* boven minder, onder meer → foto zakt */
+        grid-template-rows: 0.8fr 1.2fr;
+
+        padding-top: 12svh;   /* ⬅️ HIER zit de magie */
+        padding-bottom: 0;
+    }
+
+    /* Portfolio blok in het midden van de bovenste helft */
+    .portfolio-container {
+        align-self: center;     /* verticaal midden in rij 1 */
+        justify-self: center;
+        margin-top: 0;
+    }
+
+    /* Foto naar beneden in de onderste helft */
+    .avatar-outer-container {
+        align-self: end;        /* naar de bodem van rij 2 */
+        justify-self: center;
+        transform: translateY(5svh); /* foto zakt visueel naar beneden */
+        /* optioneel: iets groter zodat het “bottom-heavy” voelt */
+        width: min(82vw, 360px);
+        height: min(60vh, 520px);
+    }
+
 
     .portfolio-container {
         width: 100%;
         margin-top: 0;
-        padding-left: 0;
+        margin-left: 0;
         justify-self: center;
         text-align: center;
     }
@@ -210,5 +322,28 @@ a,
         justify-self: center;
         width: min(80vw, 360px);
         height: min(55vh, 520px);
+    }
+}
+
+@media (min-width: 901px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: contents;
+    }
+
+    .instagram-link {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .naam-occupatie {
+        text-align: center;
+        flex: 0 0 auto;
     }
 }
