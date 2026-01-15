@@ -188,60 +188,84 @@ a,
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 6px;
+    gap: 7px;
+
+    position: relative;
+    z-index: 4000; /* boven overlay */
 }
 
 .burger-line {
     display: block;
-    width: 22px;
+    width: 24px;
     height: 2px;
     background: #000;
     border-radius: 999px;
+
+    transition: transform 0.25s ease, opacity 0.2s ease, width 0.25s ease;
+    transform-origin: center;
+}
+
+/* OPEN STATE: transformeer naar X */
+.header.menu-open .burger-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.header.menu-open .burger-line:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+
+.header.menu-open .burger-line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 /* dropdown menu (mobile) */
 .mobile-menu {
-    display: none;
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
+    position: fixed;
+    inset: 0; /* top:0 right:0 bottom:0 left:0 */
+    background: rgba(255, 255, 255, 0.96);
 
-    background: #fff;
-    border: 1px solid rgba(0,0,0,0.12);
-    border-radius: 14px;
-    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    min-width: 220px;
-    overflow: hidden;
-    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+    z-index: 2000;
 }
+
 
 .mobile-menu-inner {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    gap: 6px;
+    gap: 28px;
+
+    text-align: center;
 }
 
+
 .mobile-item {
-    padding: 10px 12px;
-    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 14px;
-    color: #000;
-    white-space: nowrap;
+
     cursor: pointer;
+    transition: opacity 0.2s ease;
 }
 
 .mobile-item:hover {
-    background: rgba(0,0,0,0.06);
+    opacity: 0.6;
 }
 
 /* open state */
 .header.menu-open .mobile-menu {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
 }
+
 
 /* =========================
    RESPONSIVE (kleine schermen)
@@ -259,6 +283,8 @@ a,
         padding: 28px 0 10px;
         justify-content: center;
         gap: 12px;
+        position: relative;
+        z-index: 3000;
     }
 
     .projecten,

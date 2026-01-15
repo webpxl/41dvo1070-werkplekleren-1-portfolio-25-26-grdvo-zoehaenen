@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="responsive zoals ik het wil via chat">
+      <change beforePath="$PROJECT_DIR$/portfolio/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zoehaenen&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:webpxl/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-zoehaenen.git&quot;,
+    &quot;accountId&quot;: &quot;1c47cfa0-f83f-4ab3-a1c4-51825825655e&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="364O5gwlVEWVzkVSTHN9FI6SRQa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.projecten.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zoehaenen/Desktop/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-zoehaenen&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="" />
+      <created>1764262195230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764262195230</updated>
+      <workItem from="1764262196561" duration="867000" />
+      <workItem from="1764676323840" duration="2950000" />
+      <workItem from="1767800580446" duration="3482000" />
+      <workItem from="1767885402719" duration="23797000" />
+      <workItem from="1767944462793" duration="91000" />
+      <workItem from="1767947807633" duration="4384000" />
+      <workItem from="1768051810200" duration="338000" />
+      <workItem from="1768055929308" duration="5057000" />
+      <workItem from="1768214687006" duration="21830000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1764262352321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764262352321</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1764676381324</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764676381324</updated>
+    </task>
+    <task id="LOCAL-00003" summary="copilot">
+      <option name="closed" value="true" />
+      <created>1764676803862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764676803862</updated>
+    </task>
+    <task id="LOCAL-00004" summary="copilot">
+      <option name="closed" value="true" />
+      <created>1764676824256</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764676824256</updated>
+    </task>
+    <task id="LOCAL-00005" summary="header">
+      <option name="closed" value="true" />
+      <created>1767885416641</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1767885416641</updated>
+    </task>
+    <task id="LOCAL-00006" summary="begin-pagina">
+      <option name="closed" value="true" />
+      <created>1767903052563</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767903052563</updated>
+    </task>
+    <task id="LOCAL-00007" summary="begin-pagina">
+      <option name="closed" value="true" />
+      <created>1767903358469</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767903358469</updated>
+    </task>
+    <task id="LOCAL-00008" summary="projecten pagina begin">
+      <option name="closed" value="true" />
+      <created>1767912032285</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1767912032285</updated>
+    </task>
+    <task id="LOCAL-00009" summary="projecten pagina begin">
+      <option name="closed" value="true" />
+      <created>1767912039206</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1767912039206</updated>
+    </task>
+    <task id="LOCAL-00010" summary="header en hero gemaakt + begin van responisve design door chatgpt">
+      <option name="closed" value="true" />
+      <created>1768494546769</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768494546769</updated>
+    </task>
+    <task id="LOCAL-00011" summary="responsive zoals ik het wil via chat">
+      <option name="closed" value="true" />
+      <created>1768497580256</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1768497580256</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="copilot" />
+    <MESSAGE value="header" />
+    <MESSAGE value="begin-pagina" />
+    <MESSAGE value="projecten pagina begin" />
+    <MESSAGE value="header en hero gemaakt + begin van responisve design door chatgpt" />
+    <MESSAGE value="responsive zoals ik het wil via chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive zoals ik het wil via chat" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
