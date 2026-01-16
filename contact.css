@@ -1,0 +1,324 @@
+/* =========================
+   BASE
+========================= */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { min-height: 100%; }
+
+:root{
+    --header-h: 120px;                 /* desktop header */
+    --header-fixed-h: 120px;           /* wordt aangepast in responsive */
+    --side-pad: clamp(16px, 8vw, 180px);
+}
+
+body{
+    margin: 0;
+    padding-top: var(--header-fixed-h);
+    padding-left: var(--side-pad);
+    padding-right: var(--side-pad);
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: #000;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a{ color: inherit; text-decoration: none; }
+
+/* Zorgt dat e-mail/links nooit je layout kapot duwen */
+.contact-title,
+.contact-copy,
+.contact-link{
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* =========================
+   HEADER (zelfde logica)
+========================= */
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+
+    height: var(--header-h);
+    padding: 0 var(--side-pad);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    background: #fff;
+    z-index: 3000;
+}
+
+.projecten,
+.about,
+.instagram,
+.contact{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.naam-occupatie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.naam{
+    font-size: clamp(22px, 5.5vw, 32px);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.05;
+}
+
+.occupatie{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@media (min-width: 901px){
+    .nav-links{ display: contents; }   /* jouw vaste header-logica */
+    .instagram-link{ display: inline-flex; align-items: center; }
+}
+
+/* =========================
+   BURGER + OVERLAY
+========================= */
+.burger{
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+
+    position: relative;
+    z-index: 4000;
+}
+
+.burger-line{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    border-radius: 999px;
+    transition: transform 0.25s ease, opacity 0.2s ease, width 0.25s ease;
+    transform-origin: center;
+}
+
+.header.menu-open .burger-line:nth-child(1){ transform: translateY(9px) rotate(45deg); }
+.header.menu-open .burger-line:nth-child(2){ opacity: 0; width: 0; }
+.header.menu-open .burger-line:nth-child(3){ transform: translateY(-9px) rotate(-45deg); }
+
+.mobile-menu{
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.96);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.28s ease;
+
+    z-index: 2000;
+}
+
+.mobile-menu-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(16px, 3vh, 28px);
+    text-align: center;
+    padding: 24px;
+}
+
+.mobile-item{
+    font-size: clamp(34px, 6vw, 64px);
+    line-height: 0.95;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-item:hover{ opacity: 0.55; transform: translateY(-2px); }
+
+.header.menu-open .mobile-menu{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* =========================
+   CONTACT
+========================= */
+main.contact{
+    display: block;
+    position: relative;
+
+    /* Cruciaal: content zichtbaar onder fixed header */
+    padding-top: clamp(28px, 4vw, 70px);
+    padding-bottom: clamp(40px, 6vw, 90px);
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: clamp(24px, 4vw, 64px);
+    align-items: start;
+
+    /* zorgt dat het nooit “wegloopt” */
+    max-width: 1100px;
+}
+
+.contact-label{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-bottom: 14px;
+}
+
+.contact-title{
+    margin: 0 0 14px 0;
+    font-size: clamp(40px, 6.5vw, 84px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+}
+
+.contact-copy{
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.78;
+    max-width: 56ch;
+}
+
+.contact-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.contact-item{
+    display: grid;
+    gap: 6px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+}
+
+.contact-key{
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    opacity: 0.55;
+}
+
+.contact-link{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(0,0,0,0.35);
+    transition: opacity 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.contact-link:hover{
+    opacity: 0.65;
+    border-color: rgba(0,0,0,0.18);
+    transform: translateY(-1px);
+}
+
+.contact-note{
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 1.6;
+    opacity: 0.55;
+    max-width: 40ch;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet + Mobile header */
+@media (max-width: 1000px){
+    :root{ --header-fixed-h: 118px; }
+
+    body{
+        padding-top: var(--header-fixed-h);
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header{
+        height: var(--header-fixed-h);
+        padding: 18px 16px 10px;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .projecten, .about, .contact{ display: none; }
+    .nav-right .instagram-link{ display: none; }
+
+    .burger{
+        display: inline-flex;
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .occupatie{
+        font-size: 12px;
+        letter-spacing: 0.8px;
+    }
+
+    /* Tablet: 2 kolommen blijft ok */
+    .contact-grid{
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px){
+    .contact-grid{
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .contact-title{
+        font-size: clamp(34px, 10vw, 52px);
+        line-height: 0.98;
+    }
+
+    .contact-link{
+        display: inline;
+    }
+}

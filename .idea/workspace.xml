@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="UI Design en scripting project geintegreerd met behulp van ChatGpt in verband met het maken van detail paginas">
+    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="alle projecten geintegreerd, met behulp van chat">
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/portfolio.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/projecten-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/projecten-detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/projecten.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/projecten.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/projecten.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/afbeeldingen/_26_0676.png" beforeDir="false" afterPath="$PROJECT_DIR$/afbeeldingen/_26_0676.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/afbeeldingen/hero/Zoe_Haenen_portret.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/afbeeldingen/hero/Zoe_Haenen_portret.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/afbeeldingen/ikknop.png" beforeDir="false" afterPath="$PROJECT_DIR$/afbeeldingen/ikknop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/afbeeldingen/il-vicolo-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/afbeeldingen/il-vicolo-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/afbeeldingen/vis.png" beforeDir="false" afterPath="$PROJECT_DIR$/afbeeldingen/vis.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/projecten-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/projecten-detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/projecten-toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/projecten-toggle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/projecten.css" beforeDir="false" afterPath="$PROJECT_DIR$/projecten.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/projecten.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -47,32 +60,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.projecten.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/zoehaenen/Desktop/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-zoehaenen&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.contact.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.projecten.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/zoehaenen/Desktop/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-zoehaenen",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/portfolio" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/portfolio" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -99,7 +114,7 @@
       <workItem from="1768055929308" duration="5057000" />
       <workItem from="1768214687006" duration="34079000" />
       <workItem from="1768516635464" duration="180000" />
-      <workItem from="1768517393730" duration="11703000" />
+      <workItem from="1768517393730" duration="16172000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -229,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768520896368</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="alle projecten geintegreerd, met behulp van chat">
+      <option name="closed" value="true" />
+      <created>1768563183013</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1768563183013</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +282,8 @@
     <MESSAGE value="animatie op woord portfolio; chatgpt" />
     <MESSAGE value="projecten pagina; eerste zelf gemaakt daarna responive gemaakt met chatgpt." />
     <MESSAGE value="UI Design en scripting project geintegreerd met behulp van ChatGpt in verband met het maken van detail paginas" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI Design en scripting project geintegreerd met behulp van ChatGpt in verband met het maken van detail paginas" />
+    <MESSAGE value="alle projecten geintegreerd, met behulp van chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="alle projecten geintegreerd, met behulp van chat" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
