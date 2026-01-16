@@ -431,3 +431,22 @@ a,
     transform: translateY(-24px);
     transition-duration: 80ms;
 }
+
+.privacy-link{
+    position: fixed;
+    bottom: 12px;
+    right: 140px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    opacity: 0.45;
+    z-index: 100;
+}
+
+.privacy-link a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.privacy-link a:hover{
+    opacity: 0.8;
+}
