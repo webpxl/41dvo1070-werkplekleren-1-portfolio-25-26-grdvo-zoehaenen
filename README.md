@@ -81,6 +81,24 @@ Geen frameworks of libraries werden gebruikt.
 
 ---
 
+## Eindreflectie & situering
+
+De **eindreflectie en situering** van dit project zijn beschikbaar via een aparte pagina binnen deze repository.
+
+Je vindt deze via de volgende link:
+
+https://webpxl.github.io/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-zoehaenen/portfolio/portfolio.html
+
+Deze pagina bevat:
+- de **situering** van het portfolio binnen Werkplekleren 1
+- de **eindreflectie** over het proces, de gemaakte keuzes en leerpunten
+
+De inhoud maakt deel uit van de officiële projectdocumentatie en is bedoeld ter ondersteuning van de evaluatie.
+
+
+---
+
+
 ## Focus & leerdoelen
 
 - Consistente layout over meerdere pagina’s
