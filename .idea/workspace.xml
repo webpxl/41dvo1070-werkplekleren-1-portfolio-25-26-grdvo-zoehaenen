@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="alle projecten geintegreerd, met behulp van chat">
-      <change beforePath="$PROJECT_DIR$/projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/projecten.html" afterDir="false" />
+    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="er was vanalles mis, even oplossen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projecten.css" beforeDir="false" afterPath="$PROJECT_DIR$/projecten.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,7 @@
       <workItem from="1768214687006" duration="34079000" />
       <workItem from="1768516635464" duration="180000" />
       <workItem from="1768517393730" duration="16172000" />
-      <workItem from="1768572745174" duration="375000" />
+      <workItem from="1768572745174" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -245,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768572775153</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="er was vanalles mis, even oplossen">
+      <option name="closed" value="true" />
+      <created>1768573386921</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1768573386921</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +285,8 @@
     <MESSAGE value="projecten pagina; eerste zelf gemaakt daarna responive gemaakt met chatgpt." />
     <MESSAGE value="UI Design en scripting project geintegreerd met behulp van ChatGpt in verband met het maken van detail paginas" />
     <MESSAGE value="alle projecten geintegreerd, met behulp van chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="alle projecten geintegreerd, met behulp van chat" />
+    <MESSAGE value="er was vanalles mis, even oplossen" />
+    <option name="LAST_COMMIT_MESSAGE" value="er was vanalles mis, even oplossen" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
