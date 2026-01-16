@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="readme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="klaar">
       <change beforePath="$PROJECT_DIR$/portfolio/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/portfolio.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,7 @@
       <workItem from="1768516635464" duration="180000" />
       <workItem from="1768517393730" duration="16172000" />
       <workItem from="1768572745174" duration="6837000" />
-      <workItem from="1768580455002" duration="1170000" />
+      <workItem from="1768580455002" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -321,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768580626135</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="klaar">
+      <option name="closed" value="true" />
+      <created>1768582937944</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1768582937944</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +363,8 @@
     <MESSAGE value="Bijna klaar" />
     <MESSAGE value="privacy, chatgpt" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="klaar" />
+    <option name="LAST_COMMIT_MESSAGE" value="klaar" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
