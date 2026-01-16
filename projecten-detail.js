@@ -303,3 +303,48 @@ initGalleries();
     // PAS NU: lightbox handlers + nav correct binden
     initGalleries();
 })();
+// =========================
+// FOTOGRAFIE GALERIJEN (auto)
+// zwart-wit: 26 | kleur: 22
+// =========================
+
+function buildGallery({ containerId, basePath, prefix, count }) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    for (let i = 1; i <= count; i++) {
+        const src = `${basePath}/${prefix}_${i}.jpeg`;
+
+        const btn = document.createElement("button");
+        btn.className = "photo-thumb";
+        btn.type = "button";
+        btn.dataset.full = src;
+
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = `${prefix.replace("_", "-")} foto ${i}`;
+        img.loading = "lazy";
+
+        btn.appendChild(img);
+        container.appendChild(btn);
+    }
+}
+
+// ZWART-WIT
+buildGallery({
+    containerId: "bwGallery",
+    basePath: "afbeeldingen/foto analoog/zwart-wit",
+    prefix: "zwart_wit",
+    count: 26
+});
+
+// KLEUR
+buildGallery({
+    containerId: "colorGallery",
+    basePath: "afbeeldingen/foto analoog/kleur",
+    prefix: "kleur",
+    count: 22
+});
+
+// Lightbox opnieuw correct binden
+initGalleries();
