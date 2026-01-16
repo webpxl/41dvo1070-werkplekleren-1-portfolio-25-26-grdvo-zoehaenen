@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress LanguageDetectionInspection -->
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
@@ -106,17 +107,21 @@
       </article>
 
       <article class="project js-project-card" data-project="fotografie">
-        <div class="project-thumbnail"></div>
+        <div class="project-thumbnail">
+          <img src="afbeeldingen/foto analoog/Ilford_BW_400 (6).jpg" alt="berglandschap fotografie project preview" class="project-img">
+        </div>
         <div class="project-omschrijving-container">
           <div class="project-titel">Fotografie</div>
           <div class="project-omschrijving">
-            hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
+            Een persoonlijke collectie analoge fotografie, waarin ik experimenteer met licht, compositie en sfeer. Door te werken met film laat ik ruimte voor imperfectie en toeval, wat elk beeld een eigen karakter geeft.
           </div>
         </div>
       </article>
 
       <article class="project js-project-card" data-project="animatie">
-        <div class="project-thumbnail"></div>
+        <div class="project-thumbnail">
+          <img class="project-img" src="afbeeldingen/Untitled_Artwork 3.jpg" alt="">
+        </div>
         <div class="project-omschrijving-container">
           <div class="project-titel">Animatie</div>
           <div class="project-omschrijving">
@@ -126,11 +131,13 @@
       </article>
 
       <article class="project js-project-card" data-project="schetsboek">
-        <div class="project-thumbnail"></div>
+        <div class="project-thumbnail">
+          <img class="project-img" src="afbeeldingen/schetsboek/schetsboek23.png" alt="">
+        </div>
         <div class="project-omschrijving-container">
           <div class="project-titel">schetsboek</div>
           <div class="project-omschrijving">
-            hier komt een omschrijving van het project. wat ik heb gedaan, welke tools ik heb gebruikt en wat ik heb geleerd.
+            Een selectie uit mijn schetsboeken/projecten voor mijn schetsboek, waarin ik ideeën onderzoek, vormen verken en visueel denk. De tekeningen tonen mijn proces: van snelle observaties tot meer uitgewerkte studies.
           </div>
         </div>
       </article>
@@ -232,40 +239,448 @@
 
 
     <div id="view-detail-fotografie" class="is-hidden">
-      <article class="project">
-        <div class="project-thumbnail"></div>
-        <div class="project-omschrijving-container">
+      <article class="project project-detail">
+
+        <header class="project-header">
           <div class="project-titel">Fotografie</div>
+        </header>
+
+        <div class="project-omschrijving-container">
           <div class="project-omschrijving">
-            Dit is de detailpagina voor Animatie. Voeg hier later je projectcontext, stijlframes, storyboard, en final renders toe.
+            <p>
+              Deze fotoreeks is een persoonlijke collectie analoge fotografie, waarin ik experimenteer met licht, compositie en sfeer. Ik werkte met verschillende camera’s, waaronder de Canon AE-1 Program en de Pentax Zoom P280, en gebruikte diverse filmsoorten om te spelen met kleur, contrast en korrel. De negatieven werden digitaal gescand met een Plustek OpticFilm 8100, waarbij ik veel aandacht besteedde aan het bewaren van het karakter van film. Door bewust analoog te werken laat ik ruimte voor toeval en imperfectie, wat elk beeld een eigen, tastbare identiteit geeft.
+            </p>
           </div>
         </div>
+
+        <!-- GALERIJ 1: ZWART-WIT -->
+        <section class="photo-section" aria-label="Zwart-wit galerij">
+          <h3 class="photo-section-title">zwart-wit</h3>
+
+          <div class="photo-grid js-gallery" data-gallery="bw">
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_1.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_1.jpg" alt="Zwart-wit foto 1" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_2.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_2.jpg" alt="Zwart-wit foto 2" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_3.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_3.jpg" alt="Zwart-wit foto 3" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_4.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_4.jpg" alt="Zwart-wit foto 4" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_6.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_6.jpg" alt="Zwart-wit foto 6" loading="lazy">
+            </button>
+
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_8.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_8.jpg" alt="Zwart-wit foto 8" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_9.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_9.jpg" alt="Zwart-wit foto 9" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_11.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_11.jpg" alt="Zwart-wit foto 11" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_12.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_12.jpg" alt="Zwart-wit foto 12" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_13.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_13.jpg" alt="Zwart-wit foto 13" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_14.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_14.jpg" alt="Zwart-wit foto 14" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_16.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_16.jpg" alt="Zwart-wit foto 16" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_17.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_17.jpg" alt="Zwart-wit foto 17" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_18.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_18.jpg" alt="Zwart-wit foto 18" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_19.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_19.jpg" alt="Zwart-wit foto 19" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_20.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_20.jpg" alt="Zwart-wit foto 20" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_21.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_21.jpg" alt="Zwart-wit foto 21" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_22.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_22.jpg" alt="Zwart-wit foto 22" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_23.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_23.jpg" alt="Zwart-wit foto 23" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_24.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_24.jpg" alt="Zwart-wit foto 24" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_25.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_25.jpg" alt="Zwart-wit foto 25" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_26.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_26.jpg" alt="Zwart-wit foto 26" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_27.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_27.jpg" alt="Zwart-wit foto 27" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/zwart-wit/zwart_wit_28.jpg">
+              <img src="afbeeldingen/foto analoog/zwart-wit/zwart_wit_28.jpg" alt="Zwart-wit foto 28" loading="lazy">
+            </button>
+
+          </div>
+        </section>
+
+        <!-- GALERIJ 2: KLEUR -->
+        <section class="photo-section" aria-label="Kleur galerij">
+          <h3 class="photo-section-title">kleur</h3>
+
+          <div class="photo-grid js-gallery" data-gallery="color">
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_1.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_1.png" alt="Kleur foto 1" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_2.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_2.png" alt="Kleur foto 2" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_3.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_3.png" alt="Kleur foto 3" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_4.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_4.png" alt="Kleur foto 4" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_5.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_5.png" alt="Kleur foto 5" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_6.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_6.png" alt="Kleur foto 6" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_7.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_7.png" alt="Kleur foto 7" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_8.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_8.png" alt="Kleur foto 8" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_9.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_9.png" alt="Kleur foto 9" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_10.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_10.png" alt="Kleur foto 10" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_11.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_11.png" alt="Kleur foto 11" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_12.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_12.png" alt="Kleur foto 12" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_13.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_13.png" alt="Kleur foto 13" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_14.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_14.png" alt="Kleur foto 14" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_15.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_15.png" alt="Kleur foto 15" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_16.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_16.png" alt="Kleur foto 16" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_17.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_17.png" alt="Kleur foto 17" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_18.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_18.png" alt="Kleur foto 18" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_19.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_19.png" alt="Kleur foto 19" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_20.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_20.png" alt="Kleur foto 20" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_21.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_21.png" alt="Kleur foto 21" loading="lazy">
+            </button>
+
+            <button class="photo-thumb" type="button"
+                    data-full="afbeeldingen/foto analoog/kleur/kleur_22.png">
+              <img src="afbeeldingen/foto analoog/kleur/kleur_22.png" alt="Kleur foto 22" loading="lazy">
+            </button>
+
+          </div>
+        </section>
+
+
       </article>
     </div>
+
 
     <div id="view-detail-animatie" class="is-hidden">
-      <article class="project">
-        <div class="project-thumbnail"></div>
+      <article class="project project-detail">
+
+        <!-- PAGINATITEL + ALGEMENE OMSCHRIJVING -->
+        <header class="project-header">
+          <div class="project-titel">Animatie</div>
+        </header>
+
         <div class="project-omschrijving-container">
-          <div class="project-titel">animatie</div>
           <div class="project-omschrijving">
-            Dit is de detailpagina voor Animatie. Voeg hier later je projectcontext, stijlframes, storyboard, en final renders toe.
+            <p>
+              Een selectie van animatieprojecten waarin ik experimenteer met narratief,
+              timing en karakteranimatie. De focus ligt op korte verhalen, eenvoudige maar
+              expressieve vormgeving en het verkennen van beweging als vertelmiddel.
+            </p>
           </div>
         </div>
+
+        <!-- =========================
+             PROJECT 1 – KRUIPKRACHT
+        ========================= -->
+        <section class="animation-project">
+          <h3 class="animation-title">Kruipkracht</h3>
+
+          <div class="animation-video">
+            <iframe
+                src="https://player.vimeo.com/video/1083956273"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                title="Kruipkracht – animatie"
+            ></iframe>
+          </div>
+
+          <p class="animation-description">
+            Een man gaat vissen, maar zijn wormen zijn op. Hij gaat op avontuur en vindt
+            een nieuwe voorraad. Maar in alle haast blijft één worm achter, over het hoofd
+            gezien. Terwijl de man vrolijk verder vist, besluit deze worm zijn eigen pad
+            te kiezen… met onverwachte gevolgen.
+          </p>
+        </section>
+
+        <!-- =========================
+             PROJECT 2 – CONNECTED
+        ========================= -->
+        <section class="animation-project">
+          <h3 class="animation-title">Connected</h3>
+
+          <div class="animation-video">
+            <iframe
+                src="https://player.vimeo.com/video/1083959893"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                title="Connected – animatie"
+            ></iframe>
+          </div>
+
+          <p class="animation-description">
+            Een korte animatie rond verbondenheid en afstand, waarin beweging en ritme
+            centraal staan. Het project onderzoekt hoe eenvoudige vormen en timing
+            emotie kunnen overbrengen zonder woorden.
+          </p>
+        </section>
+
+        <!-- =========================
+             PROJECT 3 – NOM
+        ========================= -->
+        <section class="animation-project">
+          <h3 class="animation-title">Nom</h3>
+
+          <div class="animation-video">
+            <iframe
+                src="https://www.youtube.com/embed/bIjibxpSVo0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                title="Nom – animatie"
+            ></iframe>
+          </div>
+
+          <p class="animation-description">
+            Een speels animatie-experiment waarin timing, herhaling en eenvoudige actie
+            de basis vormen van het verhaal.
+          </p>
+        </section>
+
+        <!-- =========================
+             PROJECT 4 – STAPPEN
+        ========================= -->
+        <section class="animation-project steps">
+          <h3 class="animation-title">Stappen</h3>
+
+          <p class="animation-description">
+            Een reeks korte animaties waarin beweging stap voor stap wordt opgebouwd.
+            Elk fragment onderzoekt een volgende fase binnen dezelfde beweging.
+          </p>
+
+          <div class="step-item">
+            <div class="animation-video">
+              <iframe src="https://player.vimeo.com/video/1083960784" allowfullscreen></iframe>
+            </div>
+            <p class="animation-description">Stap 1</p>
+          </div>
+
+          <div class="step-item is-right">
+            <div class="animation-video">
+              <iframe src="https://player.vimeo.com/video/1083960818" allowfullscreen></iframe>
+            </div>
+            <p class="animation-description">Stap 2</p>
+          </div>
+
+          <div class="step-item">
+            <div class="animation-video">
+              <iframe src="https://player.vimeo.com/video/1083960870" allowfullscreen></iframe>
+            </div>
+            <p class="animation-description">Stap 3</p>
+          </div>
+
+          <div class="step-item is-right">
+            <div class="animation-video">
+              <iframe src="https://player.vimeo.com/video/1083960834" allowfullscreen></iframe>
+            </div>
+            <p class="animation-description">Stap 4</p>
+          </div>
+
+          <div class="step-item">
+            <div class="animation-video">
+              <iframe src="https://player.vimeo.com/video/1083960945" allowfullscreen></iframe>
+            </div>
+            <p class="animation-description">Stap 5</p>
+          </div>
+        </section>
+
+
       </article>
     </div>
 
+
     <div id="view-detail-schetsboek" class="is-hidden">
-      <article class="project">
-        <div class="project-thumbnail"></div>
+      <article class="project project-detail">
+
+        <header class="project-header">
+          <div class="project-titel">Schetsboek</div>
+        </header>
+
         <div class="project-omschrijving-container">
-          <div class="project-titel">schetsboek</div>
           <div class="project-omschrijving">
-            Dit is de detailpagina voor Schetsboek. Voeg hier later foto’s/scans toe en kort je aanpak/reflectie.
+            <p>
+              Een selectie uit mijn schetsboeken/projecten voor mijn schetsboek, waarin ik ideeën onderzoek, vormen verken
+              en visueel denk. De tekeningen tonen mijn proces: van snelle observaties
+              tot meer uitgewerkte studies.
+            </p>
           </div>
         </div>
+
+        <!-- GALERIJ -->
+        <section class="photo-section" aria-label="Schetsboek galerij">
+          <h3 class="photo-section-title">selectie</h3>
+
+          <div
+              class="photo-grid js-gallery"
+              data-gallery="schetsboek"
+              id="schetsboekGallery"
+          ></div>
+
+        </section>
+
       </article>
     </div>
+
 
   </section>
 

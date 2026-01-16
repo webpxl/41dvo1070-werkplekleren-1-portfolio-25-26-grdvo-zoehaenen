@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="projecten pagina; eerste zelf gemaakt daarna responive gemaakt met chatgpt.">
-      <change afterPath="$PROJECT_DIR$/portfolio/projecten-detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/projecten-toggle.js" afterDir="false" />
+    <list default="true" id="117d479e-a82f-4137-9960-2d184fd44bbe" name="Changes" comment="UI Design en scripting project geintegreerd met behulp van ChatGpt in verband met het maken van detail paginas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/projecten-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/projecten-detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/projecten.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/projecten.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/projecten.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/projecten.html" afterDir="false" />
     </list>
@@ -100,7 +99,7 @@
       <workItem from="1768055929308" duration="5057000" />
       <workItem from="1768214687006" duration="34079000" />
       <workItem from="1768516635464" duration="180000" />
-      <workItem from="1768517393730" duration="3441000" />
+      <workItem from="1768517393730" duration="11703000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -222,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768514176048</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="UI Design en scripting project geintegreerd met behulp van ChatGpt in verband met het maken van detail paginas">
+      <option name="closed" value="true" />
+      <created>1768520896368</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1768520896368</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +258,8 @@
     <MESSAGE value="hamburger menu en beginpagina helemaal af (via ChatGPT)" />
     <MESSAGE value="animatie op woord portfolio; chatgpt" />
     <MESSAGE value="projecten pagina; eerste zelf gemaakt daarna responive gemaakt met chatgpt." />
-    <option name="LAST_COMMIT_MESSAGE" value="projecten pagina; eerste zelf gemaakt daarna responive gemaakt met chatgpt." />
+    <MESSAGE value="UI Design en scripting project geintegreerd met behulp van ChatGpt in verband met het maken van detail paginas" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI Design en scripting project geintegreerd met behulp van ChatGpt in verband met het maken van detail paginas" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

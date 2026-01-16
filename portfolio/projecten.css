@@ -526,3 +526,349 @@ a{ color: inherit; text-decoration: none; }
     border: 1px solid rgba(0,0,0,0.12);
     background: #fff;
 }
+
+
+/* =========================
+   FOTOGRAFIE GALERIJ
+========================= */
+
+.photo-section{
+    margin-top: 48px;
+}
+
+.photo-section-title{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 14px 0;
+    color: rgba(0,0,0,0.75);
+}
+
+.photo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+@media (max-width: 900px){
+    .photo-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+.photo-thumb{
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    outline: none;
+}
+
+.photo-thumb img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.22s ease, opacity 0.22s ease;
+    opacity: 0.96;
+}
+
+.photo-thumb:hover img{
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox{
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.96);
+    z-index: 9999;
+    display: none;
+}
+
+.lightbox.is-open{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.lightbox-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+}
+
+.lightbox-title{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.75);
+}
+
+.lightbox-close{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px;
+}
+
+.lightbox-stage{
+    display: grid;
+    grid-template-columns: 56px 1fr 56px;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.lightbox-nav{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    height: 56px;
+    width: 56px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+}
+
+.lightbox-nav:hover{
+    background: rgba(0,0,0,0.06);
+}
+
+.lightbox-image-wrap{
+    height: min(70vh, 720px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.lightbox-thumbs{
+    padding: 14px 16px 22px;
+    overflow-x: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.lightbox-thumb{
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    width: 80px;
+    height: 56px;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0.65;
+    flex: 0 0 auto;
+    outline: none;
+}
+
+.lightbox-thumb.is-active{
+    opacity: 1;
+}
+
+.lightbox-thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   ANIMATIE – VIDEO LAYOUT
+========================= */
+.animation-project {
+    margin-top: 48px;
+}
+
+/* eerste project dichter bij intro */
+#view-detail-animatie .animation-project:first-of-type {
+    margin-top: 24px;
+}
+
+/* Titel van elk animatieproject */
+.animation-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+/* Grote video (thumbnails) */
+.animation-video {
+    width: 100%;
+    max-width: 960px;              /* ⬅️ groter dan je huidige thumbs */
+    aspect-ratio: 16 / 9;
+    background: #eee;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.animation-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Uitleg = exact dezelfde stijl als animatie intro */
+.animation-description {
+    width: min(68%, 760px);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.45;
+    letter-spacing: 0.2px;
+    color: rgba(0,0,0,0.75);
+    margin: 0;
+}
+
+/* =========================
+   STAPPEN – AFWISSELEND LINKS / RECHTS
+========================= */
+
+.animation-project.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* titel → uitleg compacter */
+.animation-project.steps .animation-title {
+    margin-bottom: 0px;
+}
+
+/* wrapper per stap */
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* video bij stappen: groot maar niet full width */
+.step-item .animation-video {
+    max-width: 640px;
+    margin-bottom: 0;
+}
+
+/* tekst naast video */
+.step-item .animation-description {
+    width: 280px;
+}
+
+/* afwisselend links / rechts */
+.step-item.is-right {
+    flex-direction: row-reverse;
+}
+
+/* =========================
+   STAPPEN – SPACING FIX + TITEL BOVEN VIDEO
+========================= */
+
+/* Minder witruimte bovenaan in de stappen sectie */
+#view-detail-animatie .animation-project.steps{
+    gap: 28px;              /* was 40/60 -> veel compacter */
+}
+
+/* De beschrijving onder "STAPPEN" mag minder ruimte nemen */
+#view-detail-animatie .animation-project.steps > .animation-description{
+    margin: 0 0 14px 0;     /* extra witruimte weg */
+}
+
+/* Elke stap: label boven video, video links/rechts uitlijnen */
+#view-detail-animatie .step-item{
+    display: flex;
+    flex-direction: column; /* label boven video */
+    align-items: flex-start;
+    gap: 10px;              /* label ↔ video */
+}
+
+/* video blijft groot maar niet full width */
+#view-detail-animatie .step-item .animation-video{
+    max-width: 640px;
+    margin-bottom: 0;       /* voorkomt extra witruimte */
+}
+
+/* het kleine titeltje (Stap 1, Stap 2, ...) */
+#view-detail-animatie .step-item .animation-description{
+    position: static;       /* <-- super belangrijk: NIET op de video */
+    width: auto;
+    margin: 0;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.75);
+}
+
+/* Afwisselend links/rechts (video + label samen) */
+#view-detail-animatie .step-item.is-right{
+    align-items: flex-end;
+}
+
+/* label blijft links uitgelijnd qua tekst (ook als blok rechts staat) */
+#view-detail-animatie .step-item.is-right .animation-description{
+    text-align: left;
+}
+
+/* Mobile: alles full width, nog steeds label boven video */
+@media (max-width: 900px){
+    #view-detail-animatie .step-item{
+        align-items: flex-start;
+    }
+
+    #view-detail-animatie .step-item .animation-video{
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 900px) {
+
+    .animation-video,
+    .step-item .animation-video {
+        max-width: 100%;
+    }
+
+    .animation-description,
+    .step-item .animation-description {
+        width: 100%;
+    }
+
+    .step-item,
+    .step-item.is-right {
+        flex-direction: column;
+        gap: 14px;
+    }
+}
